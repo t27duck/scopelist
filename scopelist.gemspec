@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["t27duck@gmail.com"]
   spec.summary       = %q{Adds ability to track scopes on ActiveRecord models}
   spec.description   = %q{Adds ability to track scopes on ActiveRecord models}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/t27duck/scopelist"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

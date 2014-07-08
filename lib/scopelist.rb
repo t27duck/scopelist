@@ -27,4 +27,4 @@ module Scopelist
   end
 end
 
-ActiveRecord::Base.include Scopelist
+ActiveRecord::Base.send(:include, Scopelist)
