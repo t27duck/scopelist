@@ -13,17 +13,20 @@ module Scopelist
 
   module ClassMethods
     def scope_with_scopelist(name, body, &block)
-      available_scopes << name.to_sym
+      additional_available_scope name
       scope_without_scopelist(name, body, &block)
     end
 
     def available_scopes
       @available_scopes ||= []
+      @available_scopes.dup
     end
 
     def additional_available_scope(name)
-      available_scopes << name.to_sym
+      @available_scopes ||= []
+      @available_scopes << name.to_sym
     end
+
   end
 end
 

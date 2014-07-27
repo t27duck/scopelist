@@ -12,6 +12,12 @@ describe '.available_scopes' do
   it 'does not bleed into other models' do
     expect(SomeOtherThing.available_scopes).to eq([])
   end
+
+  it 'cannot be mutated' do
+    expected = SomeThing.available_scopes.dup
+    SomeThing.available_scopes << :scope2
+    expect(SomeThing.available_scopes).to eq(expected)
+  end
 end
 
 describe '.additonal_available_scope' do
