@@ -5,6 +5,8 @@ A simple way to track scopes in ActiveRecord 4.0, 4.1, 4.2, and 5.0.
 NOTE: Only Ruby 2.0 and later are supported
 
 [![Build Status](https://travis-ci.org/t27duck/scopelist.svg?branch=master)](https://travis-ci.org/t27duck/scopelist)
+[![Code Climate](https://codeclimate.com/github/t27duck/scopelist/badges/gpa.svg)](https://codeclimate.com/github/t27duck/scopelist)
+[![Test Coverage](https://codeclimate.com/github/t27duck/scopelist/badges/coverage.svg)](https://codeclimate.com/github/t27duck/scopelist/coverage)
 
 ## Installation
 
