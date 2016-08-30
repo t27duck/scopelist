@@ -8,5 +8,3 @@ gemfile:
   - gemfiles/4.0.gemfile
   - gemfiles/4.1.gemfile
 sudo: false
-before_script:
-  - gem update bundler
