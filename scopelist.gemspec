@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Scopelist::VERSION
   spec.authors       = ['Tony Drake']
   spec.email         = ['t27duck@gmail.com']
-  spec.summary       = %q{Adds ability to track scopes on ActiveRecord models}
-  spec.description   = %q{Adds ability to track scopes on ActiveRecord models}
+  spec.summary       = 'Adds ability to track scopes on ActiveRecord models'
+  spec.description   = 'Adds ability to track scopes on ActiveRecord models'
   spec.homepage      = 'https://github.com/t27duck/scopelist'
   spec.license       = 'MIT'
 

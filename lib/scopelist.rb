@@ -1,7 +1,6 @@
-require "scopelist/version"
+require 'scopelist/version'
 
 module Scopelist
-
   def self.included(base)
     base.class_eval do
       extend ClassMethods
