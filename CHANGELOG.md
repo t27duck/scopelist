@@ -1,3 +1,6 @@
+#### 0.0.4 (Unreleased)
+* Only support Ruby 2.0 and later
+
 #### 0.0.3 (2014-07-27)
 * Donot allow .available_scopes to be directly mutatable
 
