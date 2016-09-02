@@ -2,6 +2,7 @@
 * Only support Ruby 2.0 and later
 * Support ActiveRecord 4.2 and 5.0
 * Use `Module.prepend` instead of `alias_method_chain`
+* Scopes are inherited from parent classes
 
 #### 0.0.3 (2014-07-27)
 * Donot allow `.available_scopes` to be directly mutatable

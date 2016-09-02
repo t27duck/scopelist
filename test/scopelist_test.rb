@@ -23,4 +23,11 @@ class ScopeListTest < Minitest::Test
   def test_additional_available_scope_appends_to_the_available_scope_list
     assert_equal [:scope2, :class_method_as_a_scope], OneMoreThing.available_scopes
   end
+
+  def test_child_class_includes_parents_scopes
+    assert_equal [:parent_scope], Parent.available_scopes
+    assert_equal [:child_scope, :parent_scope], Child.available_scopes
+    assert_equal [:child2_scope, :parent_scope], Child2.available_scopes
+    assert_equal [:child_child_scope, :child_scope, :parent_scope], ChildChild.available_scopes
+  end
 end

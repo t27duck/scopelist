@@ -23,7 +23,10 @@ module Scopelist
   module ClassMethods
     def available_scopes
       @available_scopes ||= []
-      @available_scopes.dup
+      if superclass.respond_to?(:available_scopes)
+        @available_scopes += superclass.available_scopes
+      end
+      @available_scopes.uniq.dup
     end
 
     def additional_available_scope(name)
