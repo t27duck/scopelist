@@ -11,6 +11,4 @@ require 'scopelist'
 # Compatability for older MiniTest versions (ie Rails 4.0 uses MiniTest 4.7)
 MiniTest::Test = MiniTest::Unit::TestCase unless defined?(MiniTest::Test)
 
-ActiveRecord::Base.establish_connection adapter: 'sqlite3', database: ':memory:'
-require 'schema'
 require 'models'
