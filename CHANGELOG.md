@@ -1,4 +1,4 @@
-#### 0.0.4 (Unreleased)
+#### 0.0.4 (2016-09-01)
 * Only support Ruby 2.0 and later
 * Support ActiveRecord 4.2 and 5.0
 * Use `Module.prepend` instead of `alias_method_chain`
