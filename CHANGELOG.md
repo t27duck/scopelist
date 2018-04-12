@@ -1,3 +1,8 @@
+#### 0.0.5 (2018-04-12)
+
+* Support Rails 4.2 to 5.2
+* Only test against supported Rubies
+
 #### 0.0.4 (2016-09-01)
 * Only support Ruby 2.0 and later
 * Support ActiveRecord 4.2 and 5.0
