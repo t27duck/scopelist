@@ -12,4 +12,4 @@ sudo: false
 matrix:
   exclude:
     - rvm: 2.6.2
-      gemfile: gemfiles/4.2.gemfile
+      gemfile: gemfiles/6.0.gemfile
