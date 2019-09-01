@@ -7,6 +7,7 @@ gemfile:
   - gemfiles/4.2.gemfile
   - gemfiles/5.1.gemfile
   - gemfiles/5.2.gemfile
+  - gemfiles/6.0.gemfile
 sudo: false
 matrix:
   exclude:

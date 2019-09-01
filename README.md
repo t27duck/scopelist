@@ -1,6 +1,6 @@
 # Scopelist
 
-A simple way to track scopes in ActiveRecord 4.2 to 5.2.
+A simple way to track scopes in ActiveRecord 4.2 to 6.0.
 
 NOTE: Tested on Ruby 2.4 and later. Older versions may work but are not supported.
 

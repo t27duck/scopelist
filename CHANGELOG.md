@@ -1,5 +1,6 @@
 #### 0.0.5 (2018-04-12)
 
+* Adendum: Test against Rails 6.0 (2019-11-01, no release)
 * Support Rails 4.2 to 5.2
 * Only test against supported Rubies
 
