@@ -11,5 +11,5 @@ gemfile:
 sudo: false
 matrix:
   exclude:
-    - rvm: 2.6.2
+    - rvm: 2.4.6
       gemfile: gemfiles/6.0.gemfile
