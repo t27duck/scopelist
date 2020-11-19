@@ -40,9 +40,6 @@ jobs:
             gemfile: '6.0'
 
           - ruby: '2.7'
-            gemfile: '4.2'
-
-          - ruby: '2.7'
             gemfile: '5.2'
 
           - ruby: '2.7'
