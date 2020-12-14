@@ -30,6 +30,9 @@ jobs:
           - ruby: '2.5'
             gemfile: '6.0'
 
+          - ruby: '2.5'
+            gemfile: '6.1'
+
           - ruby: '2.6'
             gemfile: '4.2'
 
@@ -39,11 +42,17 @@ jobs:
           - ruby: '2.6'
             gemfile: '6.0'
 
+          - ruby: '2.6'
+            gemfile: '6.1'
+
           - ruby: '2.7'
             gemfile: '5.2'
 
           - ruby: '2.7'
             gemfile: '6.0'
+
+          - ruby: '2.7'
+            gemfile: '6.1'
 
     name: rails ${{ matrix.gemfile }}, ruby ${{ matrix.ruby }}
 
