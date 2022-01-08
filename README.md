@@ -1,8 +1,10 @@
 # Scopelist
 
-A simple way to track scopes in ActiveRecord 4.2 to 6.1.
+A simple way to track scopes in ActiveRecord 4.2 to 7.0.
 
-NOTE: Tested on Ruby 2.4 and later. Older versions may work but are not supported.
+NOTE: Tested on Ruby 2.6 and later. Older versions may work but are not supported.
+
+NOTE: Rails 5.2 to 7.0 are officially supported. Older versions down to 4.2 may work but are not supported.
 
 ![Build Status](https://github.com/t27duck/scopelist/workflows/CI/badge.svg)
 
