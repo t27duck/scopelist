@@ -1,3 +1,8 @@
+#### Future
+
+* Use Github Actions for CI
+* Test against supported Rubies and Rails
+
 #### 0.0.5 (2018-04-12)
 
 * Adendum: Test against Rails 6.0 (2019-11-01, no release)

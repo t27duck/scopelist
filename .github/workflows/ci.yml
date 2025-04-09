@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ruby: '3.2'
+            gemfile: '7.2'
+
+          - ruby: '3.3'
+            gemfile: '7.2'
+
+          - ruby: '3.4'
+            gemfile: '7.2'
+
+          - ruby: '3.2'
+            gemfile: '8.2'
+
+          - ruby: '3.3'
+            gemfile: '8.2'
+
+          - ruby: '3.4'
+            gemfile: '8.2'
+    name: rails ${{ matrix.gemfile }}, ruby ${{ matrix.ruby }}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: false
+
+    - name: Bundle install
+      run: |
+        bundle config set gemfile "${GITHUB_WORKSPACE}/gemfiles/${{ matrix.gemfile }}.gemfile"
+        bundle install --retry 3
+
+    - name: Run tests
+      run: |
+        bundle exec rake test
