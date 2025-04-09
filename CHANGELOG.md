@@ -1,7 +1,7 @@
 #### 0.0.6 (Unreleased)
 
-* Test against Ruby 3.0 and later
-* Test against Rails 7.1 and later
+* Test against supported Rubies
+* Test against supported Rails
 * Use Dependabot to manage actions
 
 #### 0.0.5 (2018-04-12)
